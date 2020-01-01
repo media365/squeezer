@@ -1,5 +1,5 @@
 {
-    "name": "media365/url-shortener",
+    "name": "media365/squeezer",
     "description": "url shorten package using Laravel",
     "keywords": [
         "laravel",
@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^6.2",
         "guzzlehttp/psr7": "^1.4",
         "illuminate/support": "^5.1 || ^6.0",
-        "media365/url-shortener": "dev-master",
+        "media365/squeezer": "dev-master",
         "psr/http-message": "^1.0"
     },
     "require-dev": {
@@ -23,26 +23,19 @@
     },
     "autoload": {
         "psr-4": {
-            "Media365\\UrlShortener\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Media365\\UrlShortener\\Tests\\": "tests/"
+            "Media365\\Squeezer\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "config": {
         "sort-packages": true
     },
-    "scripts": {
-        "tests": "./vendor/bin/phpunit --colors=always"
-    },
     "extra": {
         "laravel": {
             "providers": [
-                "\\Media365\\UrlShortener\\UrlShortenerServiceProvider"
+                "\\Media365\\Squeezer\\SqueezerServiceProvider"
             ]
         }
     }
 }
+Squeezer
