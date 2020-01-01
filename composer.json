@@ -14,7 +14,6 @@
         "guzzlehttp/guzzle": "^6.2",
         "guzzlehttp/psr7": "^1.4",
         "illuminate/support": "^5.1 || ^6.0",
-        "media365/squeezer": "dev-master",
         "psr/http-message": "^1.0"
     },
     "require-dev": {
