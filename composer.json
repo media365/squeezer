@@ -1,0 +1,48 @@
+{
+    "name": "media365/url-shortener",
+    "description": "url shorten package using Laravel",
+    "keywords": [
+        "laravel",
+        "url",
+        "shortening",
+        "shortener"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.2",
+        "guzzlehttp/psr7": "^1.4",
+        "illuminate/support": "^5.1 || ^6.0",
+        "media365/url-shortener": "dev-master",
+        "psr/http-message": "^1.0"
+    },
+    "require-dev": {
+        "illuminate/routing": "^5.1 || ^6.0",
+        "phpunit/phpunit": "^5.2 || ^6.0 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Media365\\UrlShortener\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Media365\\UrlShortener\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "tests": "./vendor/bin/phpunit --colors=always"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Media365\\UrlShortener\\UrlShortenerServiceProvider"
+            ]
+        }
+    }
+}
