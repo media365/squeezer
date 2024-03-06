@@ -1,5 +1,5 @@
 # squeezer
-URL shortening or squeezing package in Laravel
+URL shortening or squeezing package in Laravel.
     
 ## Installation
 You can easily install this package using Composer, by running the following command:
